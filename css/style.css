@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-div{
+  display: flex;
+  flex-direction: column;
+  margin: 9rem 0 0 0;
+}
+.main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: indigo;
+}
+.userInput{
+  width: 40rem;
+  height: 4rem;
+  outline: none;
+  padding: 0 .4rem;
+  font-size: 1.2rem;
+  border: .2rem solid indigo;
+}
+
+#btn{
+  padding: 1.2rem 2rem;
+  font-size: 1rem;
+  border: .2rem solid indigo;
+}
+#btn:hover{
+  background: indigo;
+  color: white;
+}
+.output-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.input-div{
+  display: flex;
+  gap: .5rem;
+}
+
+
+@media (max-width: 768px) and (min-width: 550px){
+  .main-text{
+    font-size: 1.5rem;
+  }
+  .userInput{
+    width: 25rem;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 420px){
+  .main-text{
+    font-size: 1.2rem;
+  }
+  .input-div{
+    flex-direction: column;
+  }
+  .userInput{
+    width: 25rem;
+  }
+  .inputField-div{
+    padding: 0 0 1rem 0;
+  }
+  .button-div{
+    display: flex;
+    justify-content: center;
+  }
+  #btn{
+    padding: 1.2rem 6rem ;
+  }
+  .output-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 420px) and (min-width: 300px){
+  .main-text{
+    font-size: .8rem;
+  }
+  .input-div{
+    flex-direction: column;
+  }
+  .userInput{
+    width: 18rem;
+  }
+  .inputField-div{
+    padding: 0 0 1rem 0;
+  }
+  .button-div{
+    display: flex;
+    justify-content: center;
+  }
+  #btn{
+    padding: 1.2rem 4rem ;
+  }
+  .output-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
