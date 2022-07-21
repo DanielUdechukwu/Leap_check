@@ -10,16 +10,36 @@ function myFunction(){
     console.log(`a number`);
 
     if (userInput.length < 5 && userInput.length > 3){
-      if (userInput % 4 == 0 && userInput % 400 == 0){
-        output.innerHTML = `'${userInput}' is a leap year!`;
-        
-      }else if (userInput % 100 == 0 && userInput % 400 != 0){
-        output.innerHTML = `'${userInput}' is a not a leap year!`;
-      }else if (userInput % 400 == 0){
-        output.innerHTML = `'${userInput}' is a leap year`;
-      }else {
+
+      if (userInput % 4 == 0){
+        if (userInput % 100 == 0){
+          if (userInput % 400 == 0){
+            output.innerHTML = `'${userInput}' is a leap year!`;
+          }else{
+            output.innerHTML = `'${userInput}' is a not a leap year!`;
+          }
+        }else{
+          output.innerHTML = `'${userInput}' is a leap year!`;
+        }
+      }else{
         output.innerHTML = `'${userInput}' is a not a leap year!`;
       }
+
+
+
+
+      // if (userInput % 4 == 0){
+    
+      //   if (userInput % 100 == 0 && userInput % 400 != 0){
+      //     output.innerHTML = `'${userInput}' is a not a leap year!`;
+      //   }else if (userInput % 400 == 0){
+      //     output.innerHTML = `'${userInput}' is a leap year`;
+      //   }else {
+      //     output.innerHTML = `'${userInput}' is a not a leap year!`;
+      //   }
+      // }else{
+      //   output.innerHTML = `'${userInput}' is a not a leap year!`;
+      // }
     }else if (userInput.length <= 3){
       output.innerHTML = `'${userInput}' less than 4 digits, not a valid year`;
     }else{
