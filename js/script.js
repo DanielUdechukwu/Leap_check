@@ -2,7 +2,7 @@
 
 const button = document.getElementById('btn');
 
-function myFunction(){
+let myFunction = () => {
   let userInput = document.getElementById('myUser').value;
   let output = document.getElementById('output');
 
