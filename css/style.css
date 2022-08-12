@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Zilla+Slab&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Zilla Slab', serif;
 }
 
 .parent-div{
@@ -54,6 +60,10 @@
   gap: .5rem;
 }
 
+#output{
+  font-family: 'Merriweather';
+}
+
 
 @media (max-width: 768px) and (min-width: 550px){
   .main-text{
@@ -89,6 +99,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
   }
   
 }
@@ -118,6 +130,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
   }
   
 }
