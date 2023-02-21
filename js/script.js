@@ -1,10 +1,10 @@
-// LEAP YEAR PROGRAM
 
 const button = document.getElementById('btn');
+const keypress = document.getElementById('myUser');
 
 let myFunction = () => {
-  let userInput = document.getElementById('myUser').value;
   let output = document.getElementById('output');
+  let userInput = document.getElementById('myUser').value;
 
   if (isNaN(userInput) === false){
     console.log(`a number`);
@@ -25,21 +25,6 @@ let myFunction = () => {
         output.innerHTML = `'${userInput}' is a not a leap year!`;
       }
 
-
-
-
-      // if (userInput % 4 == 0){
-    
-      //   if (userInput % 100 == 0 && userInput % 400 != 0){
-      //     output.innerHTML = `'${userInput}' is a not a leap year!`;
-      //   }else if (userInput % 400 == 0){
-      //     output.innerHTML = `'${userInput}' is a leap year`;
-      //   }else {
-      //     output.innerHTML = `'${userInput}' is a not a leap year!`;
-      //   }
-      // }else{
-      //   output.innerHTML = `'${userInput}' is a not a leap year!`;
-      // }
     }else if (userInput.length <= 3){
       output.innerHTML = `'${userInput}' less than 4 digits, not a valid year`;
     }else{
@@ -52,18 +37,10 @@ let myFunction = () => {
 }
 
 
-
-
-
-
-
-
-
-
-
-// else{
-//   console.log(false);
-// }
-
-// typeof year === 'number' && year.toString().length === 4 ? console.log(true) : console.log(false);
-
+keypress.addEventListener('keyup', (e) =>{
+  if (e.keyCode === 13){
+    myFunction();
+  } else if (e.keyCode === 8) {
+    output.innerHTML = '';
+  }
+});
