@@ -81,8 +81,12 @@ body{
   .input-div{
     flex-direction: column;
   }
+  .main > div{
+    width: 80%;
+  }
   .userInput{
-    width: 25rem;
+    width: 100%;
+    margin: 0 auto;
   }
   .inputField-div{
     padding: 0 0 1rem 0;
@@ -93,6 +97,7 @@ body{
   }
   #btn{
     padding: 1.2rem 6rem ;
+    width: 100%;
   }
   .output-div{
     display: flex;
@@ -112,8 +117,12 @@ body{
   .input-div{
     flex-direction: column;
   }
+  .main > div{
+    width: 90%;
+    margin: 0 auto;
+  }
   .userInput{
-    width: 18rem;
+    width: 100%;
   }
   .inputField-div{
     padding: 0 0 1rem 0;
@@ -124,6 +133,7 @@ body{
   }
   #btn{
     padding: 1.2rem 4rem ;
+    width: 100%;
   }
   .output-div{
     display: flex;
